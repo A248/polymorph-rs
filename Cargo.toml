@@ -1,0 +1,26 @@
+[package]
+name = "polymorph"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "A set of utilities to better enable polymorphic behavior in Rust."
+homepage = "https://github.com/A248/polymorph-rs"
+repository = "https://github.com/A248/polymorph-rs"
+readme = "README.md"
+keywords = ["polymorphism", "utility", "trait", "dynamic", "any"]
+categories = ["rust-patterns"]
+rust-version = "1.56"
+
+[dependencies]
+dyn-clone = { version = "1.0.4", optional = true }
+
+[dev-dependencies]
+downcast-rs = "1.2.0"
+fastrand = "1.5.0"
+
+[features]
+trait-clone = ["dyn-clone"]
+
+# cargo-release
+[package.metadata.release]
+allow-branch = ["master"]
