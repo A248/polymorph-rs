@@ -1,0 +1,22 @@
+
+name: Rust CI
+
+on:
+  push:
+    branches: [ '*' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install latest stable Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+    - name: Cache Rust build
+      uses: Swatinem/rust-cache@v1
+    - name: Test with Cargo
+      run: cargo test
+    - name: Test with Cargo with all features
+      run: cargo test --all-features
