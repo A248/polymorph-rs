@@ -16,4 +16,10 @@
 
 #![forbid(unsafe_code)]
 
+//!
+//! Currently only the ref_or_owned module is provided, but if or when
+//! more utilities are introduced, they will be placed into separate
+//! modules.
+//!
+
 pub mod ref_or_owned;

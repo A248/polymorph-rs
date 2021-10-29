@@ -21,6 +21,14 @@ use std::fmt::{Display, Formatter};
 use std::cmp::Ordering;
 use std::hash::{Hash, Hasher};
 
+//!
+//! Contains abstractions over references and ownership. Provides types
+//! which may represent either a borrowed reference or an owned value.
+//!
+//! Both sized and unsized types may be used. References may be either mutable
+//! or immutable. The right enum should be chosen on these bases.
+//!
+
 /// A type which can be either an immutable reference, or an owned value.
 /// RefOrOwned requires sized types. For unsized types, use `RefOrBox` instead.
 ///
