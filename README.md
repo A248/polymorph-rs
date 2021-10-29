@@ -1,6 +1,9 @@
 
 # Polymorph
 
+[![crates.io version](https://img.shields.io/crates/v/polymorph)](https://crates.io/crates/polymorph)
+[![apache2 license](https://img.shields.io/crates/l/polymorph)](https://www.gnu.org/licenses/license-recommendations.html)
+[![docs.rs docs](https://img.shields.io/docsrs/polymorph)](https://docs.rs/polymorph)
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 
 A set of utilities to better enable polymorphic behavior in Rust.
