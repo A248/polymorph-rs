@@ -22,4 +22,11 @@
 //! modules.
 //!
 
+///
+/// Contains abstractions over references and ownership. Provides types
+/// which may represent either a borrowed reference or an owned value.
+///
+/// Both sized and unsized types may be used. References may be either mutable
+/// or immutable. The right enum should be chosen on these bases.
+///
 pub mod ref_or_owned;
